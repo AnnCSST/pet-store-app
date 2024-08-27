@@ -1,53 +1,82 @@
-.cards-container {
-    display: grid;
-    gap: 26px;
-    place-content: center;
-  }
-  
-  .product-card {
-    width: 240px;
-  }
-  .product-card img {
-    width: 240px;
-    height: 240px;
-    border-radius: 20px;
-    object-fit: cover;
-  }
-  .product-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12px;
-  }
-  .product-info figure {
-    margin: 0;
-  }
-  .product-info figure img {
-    width: 25px;
-    height: 25px;
-  }
-  .product-info div p:nth-child(1) {
-    font-weight: bold;
-    font-size: var(--md);
-    margin-top: 0;
-    margin-bottom: 4px;
-  }
-  .product-info div p:nth-child(2) {
-    font-size: var(--sm);
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--very-light-pink);
-  }
-  @media (max-width: 640px) {
-    .cards-container {
-      grid-template-columns: repeat(auto-fill, 140px);
-    }
-    .product-card {
-      width: 140px;
-    }
-    .product-card img {
-      width: 140px;
-      height: 140px;
-    }
-  }
 
+.cards-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  height: 100vh;    
+  padding-top: 20px;     
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  padding: 16px;
+  width: 100%;
+  max-width: 300px;       
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.product-card img {
+  width: 90%;            
+  height: auto;
+  border-radius: 30px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  width: 90%;                    
+  margin-top: 20px;             
+}
+
+.product-info div {
+  display: flex;
+  flex-direction: column;         
+  align-items: flex-start;      
+}
+
+.product-info .product-price {
+  margin: 0;
+}
+
+.product-info .product-name {
+  margin: 0;
+  color: gray;
+}
+
+.product-info figure {
+  margin: 0;
+}
+
+.product-counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.product-counter button {
+  background-color: rgb(212, 163, 123);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.product-counter button:hover {
+  background-color: rgb(223, 182, 150);
+}
+
+
+.product-price {
+  margin: 0;
+  font-weight: bold;
+}
