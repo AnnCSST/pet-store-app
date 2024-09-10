@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-product',
@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CardProductComponent implements OnInit {
 
   cantidad: number = 0;
-
-  product = {
+// Creacion del Input que recibe del componente padre el array de productos
+  @Input() product = {
     name: 'Bike',
     price: 120,
     description: 'Product Description',
