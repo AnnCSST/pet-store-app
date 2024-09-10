@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-catalogo',
+  templateUrl: './catalogo.component.html',
+  styleUrl: './catalogo.component.scss'
 })
-export class AppComponent {
-  title = 'MyPrueba';
+export class CatalogoComponent {
+  title = 'ComponenteCatalogo';
 // Array de Objetos de productos
 products = [
   {
@@ -81,4 +81,6 @@ products = [
   },
 ]
 }
+
+
 
