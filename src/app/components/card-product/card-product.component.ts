@@ -10,7 +10,7 @@ export class CardProductComponent implements OnInit {
   cantidad: number = 0;
 // Creacion del Input que recibe del componente padre el array de productos
   @Input() product = {
-    name: 'Bike',
+    name: 'Bike', 
     price: 120,
     description: 'Product Description',
     inventory: 10,
@@ -19,8 +19,7 @@ export class CardProductComponent implements OnInit {
 
   soldOut: boolean = false;
 
-  constructor() { }
-
+  constructor() { } 
   ngOnInit() {
   }
 
